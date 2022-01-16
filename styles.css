@@ -21,6 +21,32 @@
     text-align: justify;
 }
 
+.image {
+    background-image: url(empty-photo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+tbody, tr {
+    width: 800px;
+    padding: 5px;
+}
+
+.photos {
+    position: relative;
+}
+
+.photo {
+    position: absolute;
+    background-image: url(empty-photo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+table {
+    display: table;
+}
+
 h1 {
     font-size: 48px;
 }

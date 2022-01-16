@@ -1,11 +1,11 @@
-.reveal{
-    position: relative;
+/*  Code based on https://alvarotrigo.com/blog/css-animations-scroll/ */
+.reveal {
     transform: translateY(150px);
     opacity: 0;
     transition: 1s all ease;
 }
 
-.reveal.active{
+.reveal.active {
     transform: translateY(0);
     opacity: 1;
 }
