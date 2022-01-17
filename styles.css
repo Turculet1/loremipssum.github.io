@@ -9,16 +9,7 @@
     font-size: 200px;
     color: white;
     margin: 0;
-}
-
-#content {
-    display: flex;
-    justify-content: center;
-}
-
-#introduction {
-    max-width: 800px;
-    text-align: justify;
+    z-index: 1000;
 }
 
 .image {
@@ -90,4 +81,30 @@ body {
 
 body::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
+}
+
+.diagonal-box-left {
+    background-color: #00008b;
+    transform: skewY(-5deg);
+    height: 100vh;
+}
+.horizontal-content-left {
+    max-width: 50em;
+    margin: 0 auto;
+    transform: skewY(5deg);
+    text-align: justify;
+    margin: 0 auto;
+    color: white;
+}
+.diagonal-box-right {
+    background-color: #ADD8E6;
+    transform: skewY(5deg);
+    height: 100vh;
+}
+.horizontal-content-right {
+    max-width: 50em;
+    margin: 0 auto;
+    transform: skewY(-5deg);
+    text-align: justify;
+    margin: 0 auto;
 }
