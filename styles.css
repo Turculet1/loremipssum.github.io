@@ -1,7 +1,7 @@
 #cover {
     height: 100vh;
     max-width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(wave.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(wave.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -27,24 +27,22 @@
     background-position: center;
 }
 
-tbody, tr {
-    width: 800px;
-    padding: 5px;
-}
-
 .photos {
     position: relative;
 }
-
-.photo {
+.photo-container {
+    overflow: hidden;
     position: absolute;
+}
+.photo {
     background-image: url(empty-photo.png);
     background-position: center;
     background-size: cover;
+    height: 100%;
+    width: 100%;
 }
-
-table {
-    display: table;
+.photo-container:hover .photo {
+    transform: scale(1.5);
 }
 
 h1 {
