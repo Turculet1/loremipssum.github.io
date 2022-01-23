@@ -1,14 +1,17 @@
-#cover {
+.slide {
     height: 100vh;
     max-width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(wave.jpg);
-    background-size: cover;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#cover {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(wave.jpg);
+    background-size: cover;
     font-size: 200px;
     color: white;
-    margin: 0;
 }
 
 #content {
@@ -16,22 +19,27 @@
     justify-content: center;
 }
 
-#introduction {
-    max-width: 800px;
+.container {
+    width: 800px;
     text-align: justify;
 }
-
-.image {
-    background-image: url(empty-photo.png);
-    background-size: cover;
-    background-position: center;
+.container-medium {
+    width: 600px;
+    text-align: justify;
 }
-
+.container-small {
+    width: 400px;
+    text-align: justify;
+}
+.citation {
+    font-family: cursive;
+    text-align: right;
+    font-size: 24px;
+}
 .photos {
     position: relative;
 }
 .photo-container {
-    overflow: hidden;
     position: absolute;
 }
 .photo {
@@ -40,9 +48,31 @@
     background-size: cover;
     height: 100%;
     width: 100%;
+    border-radius: 20px;
 }
 .photo-container:hover .photo {
-    transform: scale(1.5);
+    z-index: 9998;
+    transform: scale(1.1);
+}
+.fullscreen {
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.bg-1 {
+    background-color: rgb(32, 109, 156);
+    color: white;
+}
+.bg-2 {
+    background-color: rgb(11, 55, 82);
+    color: white;
+}
+.bg-3 {
+    background-color: rgb(165, 213, 243);
+    color: black;
 }
 
 h1 {
@@ -88,4 +118,9 @@ body {
 
 body::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
+}
+
+.photo-1 {
+    background-image: url('lorem-ipsum.jpg');
+    box-shadow: -5px 10px 6px rgb(33, 33, 33, .5);
 }
