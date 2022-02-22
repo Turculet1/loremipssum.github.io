@@ -40,6 +40,7 @@ function keyScroll(e) {
   if (keys[e.keyCode] != undefined) {
     if (keys[e.keyCode] != 2) changeSlide (keys[e.keyCode]);
     preventDefault(e);
+    if (keys[e.keyCode] != 2) changeSlide (keys[e.keyCode]); 
     return false;
   }
 }
